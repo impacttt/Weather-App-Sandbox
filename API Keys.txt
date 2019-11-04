@@ -1,0 +1,3 @@
+https://home.openweathermap.org/api_keys
+
+5cecf9184abbde1d4c19751bd40b80ec
