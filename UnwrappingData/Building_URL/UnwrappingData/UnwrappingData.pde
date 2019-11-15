@@ -5,6 +5,8 @@ void setup() {
   BuildingURL();
   APICall();
   unwrapToVariables();
+  println(tempEdmonton);
+  println(apiCurrentDateCall);
   
   
 

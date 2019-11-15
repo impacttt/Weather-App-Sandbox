@@ -3,6 +3,12 @@
 // Global Variables
 
 void setup() {
+  BuildingURL();
+  APICall();
+  unwrapToVariables();
+  size(500,600); //Add screen size checker
+  // Add fullscreen() option, with Display Size Checker
+  GUI_Setup();
 }
 
 
@@ -15,6 +21,9 @@ void draw() {
 
 void mousePressed () {
   // City Call, see procedure using Boolean & Button
+  APICall();
+  unwrapToVariables();
+  println(apiCurrentDateCall);
 }
 
 
