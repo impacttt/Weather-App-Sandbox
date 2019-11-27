@@ -63,6 +63,7 @@ long apiCallTimeEdmonton = jsonCurrentEdmonton.getInt("dt");
 apiCurrentDateCall = humanDate(apiCallTimeEdmonton);
 nameEdmonton = jsonCurrentEdmonton.getString("name");
 
+
 }
 
 

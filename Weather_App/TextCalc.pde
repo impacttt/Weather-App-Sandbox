@@ -7,11 +7,11 @@ float currentTempEdmonton, currentTempToronto, currentTempVancouver;
 String nameEdm, nameTo, nameVan;
 
 void textSetup() {
-  titleFont = createFont("Segoe UI Light", 55); // Tools -> CreateFont -> Find Font -> Hit "No" then "OK"
+  titleFont = createFont("Segoe UI Light", height *1/10); // Tools -> CreateFont -> Find Font -> Hit "No" then "OK"
  title = "Weather App";
- titleWidth = width *1/2;
+ titleWidth = width *1/4;
  titleHeight = height * 1/10;
- quit = "X123456789";
+ quit = "X";
  //apiCurrentDateCall = ;
  currentTempEdmonton = tempEdmonton ;
  currentTempToronto = tempToronto ;
@@ -27,21 +27,21 @@ void textDraw(String string, PFont font, float height, color ink, int alignHoriz
   float fontSize = height;
   fill(ink);
   textAlign (alignHorizontal, alignVertical);
-
   if (string.length() >= 3) {
     fontSize = textCalculator(height, string, rectangleWidth);
   } 
   else {
-    fontSize = fontSize * 0.08;
+    fontSize = fontSize * 0.06;
   }
   textFont(font, fontSize); 
   text(string, rectX, rectY, rectangleWidth, rectangleHeight); 
+  fill(255);
 }
 
-float textCalculator(float size, String string, float rectWidth) {
+float textCalculator(float size, String string, float rectangleWidth) {
   textSize(size);
-  while ( textWidth(string) > rectWidth ) {
-    size = size * 0.99;
+  while ( textWidth(string) > rectangleWidth ) {
+    size = size * 0.95;
     textSize(size);
   }
   return size; 

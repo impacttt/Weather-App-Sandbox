@@ -42,7 +42,6 @@ void mousePressed() {
   println(apiCurrentDateCall);
   // City Call, see procedure using Boolean & Button
   //
-  
   if ( mouseX>currentAPICallX1 && mouseX<currentAPICallX1+currentAPICallRectangleWidth1 && mouseY>currentAPICallY1 && mouseY<currentAPICallY1+currentAPICallRectangleHeight1 ) {
     edmTemp = String.valueOf(tempEdmonton);
     rect(currentTempX, currentTempY, currentTempRectangleWidth, currentTempRectangleHeight);
@@ -57,7 +56,6 @@ void mousePressed() {
     println(tempToronto, toTemp);
   }
   //
-  
   if (mouseX>currentAPICallX3 && mouseX<currentAPICallX3+currentAPICallRectangleWidth3 && mouseY>currentAPICallY3 && mouseY<currentAPICallY3+currentAPICallRectangleHeight3) {
     vanTemp = String.valueOf(tempVancouver);
     rect(currentTempX, currentTempY, currentTempRectangleWidth, currentTempRectangleHeight);
