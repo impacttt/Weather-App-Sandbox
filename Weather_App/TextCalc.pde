@@ -7,9 +7,9 @@ float currentTempEdmonton, currentTempToronto, currentTempVancouver;
 String nameEdm, nameTo, nameVan;
 
 void textSetup() {
-  titleFont = createFont("Segoe UI Light", height *1/10); // Tools -> CreateFont -> Find Font -> Hit "No" then "OK"
+  titleFont = createFont("Segoe UI Light", height *1/15); // Tools -> CreateFont -> Find Font -> Hit "No" then "OK"
  title = "Weather App";
- titleWidth = width *1/4;
+ titleWidth = width *1/10;
  titleHeight = height * 1/10;
  quit = "X";
  //apiCurrentDateCall = ;

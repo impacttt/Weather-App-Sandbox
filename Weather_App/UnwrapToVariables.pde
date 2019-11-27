@@ -44,6 +44,7 @@ Date humanDate(long unixTime) {
 void currentEdmonton(){
   
 JSONArray weather = jsonCurrentEdmonton.getJSONArray("weather"); //Unwrapping array
+
 JSONObject all = weather.getJSONObject(0); //Unwrapping object {} brackets
 mainWeatherEdmonton = all.getString("main");
 descriptionEdmonton = all.getString("description");
@@ -54,13 +55,16 @@ tempEdmonton = mainEdmonton.getFloat("temp");
 tempMinEdmonton = mainEdmonton.getFloat("temp_min");
 tempMaxEdmonton = mainEdmonton.getFloat("temp_max");
 
+
+
+long apiCallTimeEdmonton = jsonCurrentEdmonton.getInt("dt");
+apiCurrentDateCall = humanDate(apiCallTimeEdmonton);
+
 JSONObject sys = jsonCurrentEdmonton.getJSONObject("sys"); //Unwrapping object {} brackets
 countryEdmonton = sys.getString("country");
 sunriseEdmonton = sys.getInt("sunrise");
 sunsetEdmonton = sys.getInt("sunset");
 
-long apiCallTimeEdmonton = jsonCurrentEdmonton.getInt("dt");
-apiCurrentDateCall = humanDate(apiCallTimeEdmonton);
 nameEdmonton = jsonCurrentEdmonton.getString("name");
 
 
