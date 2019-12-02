@@ -11,12 +11,13 @@ float currentAPICallX4, currentAPICallY4, currentAPICallRectangleWidth4, current
 float currentAPICallX5, currentAPICallY5, currentAPICallRectangleWidth5, currentAPICallRectangleHeight5; //Friday
 
 
+
 void GUI_Setup() {
   background(black); //Add dark mode
   //City Name
-   titleX = width*1/7.20;
+   titleX = width*1/4;
    titleY =  height*0;
-   titleRectangleWidth = width*7/10;
+   titleRectangleWidth = width*1/2;
    titleRectangleHeight = height*1/10;
    rect(titleX, titleY, titleRectangleWidth, titleRectangleHeight);
    
@@ -30,11 +31,11 @@ void GUI_Setup() {
    
   /// Date
   
-   currentTempX = width*1/4;
-   currentTempY = height* 30/300;
-   currentTempRectangleWidth = width* 1/2;
-   currentTempRectangleHeight = height* 15/300;
-   rect(currentTempX, currentTempY, currentTempRectangleWidth, currentTempRectangleHeight);
+   currentAPIX = width*1/4;
+   currentAPIY = height* 30/300;
+   currentAPIRectangleWidth = width* 1/2;
+   currentAPIRectangleHeight = height* 15/300;
+   rect(currentAPIX, currentAPIY, currentAPIRectangleWidth, currentAPIRectangleHeight);
    
    ///----------------------------------------
    

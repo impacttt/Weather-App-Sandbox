@@ -9,8 +9,8 @@ String nameEdm, nameTo, nameVan;
 void textSetup() {
   titleFont = createFont("Segoe UI Light", height *1/15); // Tools -> CreateFont -> Find Font -> Hit "No" then "OK"
  title = "Weather App";
- titleWidth = width *1/10;
- titleHeight = height * 1/10;
+ titleWidth = width *1/7.20;
+ titleHeight = height * 0;
  quit = "X";
  //apiCurrentDateCall = ;
  currentTempEdmonton = tempEdmonton ;
